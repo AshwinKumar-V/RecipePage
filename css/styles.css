@@ -1,0 +1,178 @@
+@font-face {
+    font-family: PlayfairDisplay ;
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Montserrat ;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+*{
+    margin: 0;
+}
+body{
+    margin: 4% 16% 0;
+    font-family: Montserrat;
+}
+
+    header h1{
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .header-text{
+        display: flex;
+        align-content: flex-start;
+        width:65%;
+        margin: 1.5% 0;
+    }
+        .header-text img{
+        margin:0.8% 1.5% 0.8% 0;
+        height: fit-content;
+        }
+        .header-text p{
+            flex: 1;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #4F4F4F;
+        }
+
+    .banner img{
+        width: 100%;
+        margin: 5% 0;
+    }
+
+.content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+    .timings{
+        width:23%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        height: fit-content;
+    }
+        .timings ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 15% 10% ;
+        }
+            .timings li{
+                display: flex;
+                align-items: center;
+            }
+                .timings img{
+                    width: 25%;
+                    height: 25%;
+                    padding: 10%;
+                }
+                .timings-item{
+                    flex: 1;
+                }
+                    .timings-item h5{
+                        width: fit-content;
+                        font-weight: bold;
+                        font-size: 10px;
+                        line-height: 12px;
+                        text-transform: uppercase;
+                        color: #BDBDBD;
+                    }
+                    .timings-item h4{
+                        margin-top: 8%;
+                        width: fit-content;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #333333;
+                    }
+
+                    .timings li:nth-child(1) h4{
+                        color: #0288D1;
+                    }
+
+    .texts{
+        width: 60%;
+    }
+        .texts h3{
+            font-family: Playfair Display;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: #333333;
+        }
+        .texts li{
+            font-size: 16px;
+            color: #333333;
+        }
+            .ingredients h5{
+                font-family: Playfair Display;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #333333;
+                margin: 5% 0;
+            }
+            .ingredients ul{
+                list-style-type: none;
+                padding: 0;
+            }
+                .ingredients li{
+                    display: flex;
+                    margin-top:2%;
+                }
+                    .ingredients li input[type=checkbox]{
+                        transform: scale(1.4);
+                        margin-left: 1%;
+                    }
+                    .ingredients li label{
+                        margin-left: 3%;
+                    }
+
+        .instructions h3{
+            margin: 5% 0;
+        }
+            .instructions ol{
+                list-style: none;
+                padding: 0;
+            }
+            .instructions ol li{
+                margin: 5% 0;
+                display: flex;
+            }
+                .instructions ol li::before{
+                    content: counter(list-item);
+                    counter-increment: list-item;
+                    background-color:#0288D1 ;
+                    font-family: Playfair Display;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    border-radius: 15%;
+                    color: #FFFFFF;
+                    padding: 0.8% 2%;
+                    height: fit-content;
+                }
+
+                .instructions ol li p{
+                    margin-left:3% ;
+                }
+
+        .instructions a{
+            margin: 10% 0;
+            display: block;
+            color: #BDBDBD;
+            text-decoration: none;
+        }
+
+footer{
+    padding: 2% 4%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #BDBDBD;
+    text-align: center;
+}
